@@ -1,95 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Function Documentation - BAMN Engine</title>
+  <meta charset="UTF-8">
+  <title>Game Engine API Documentation</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 40px 20px;
-      line-height: 1.6;
-      background-color: #f9f9f9;
-    }
-    h1, h2 {
-      text-align: center;
-      color: #333;
-    }
-    .section {
-      margin: 40px 0;
-    }
-    pre {
-      background: #eee;
-      padding: 10px;
-      border-radius: 6px;
-      overflow-x: auto;
-    }
+    /* Basic styling */
+    body { font-family: sans-serif; max-width: 800px; margin: auto; padding: 1em; }
+    nav ul { list-style: none; padding: 0; }
+    nav li { margin: 0.5em 0; }
+    section { margin-top: 2em; }
+    a { text-decoration: none; color: #007acc; }
   </style>
 </head>
 <body>
-
-  <h1>Function Documentation</h1>
-  <p style="text-align: center;">Detailed documentation of the BAMN Engine's functions</p>
-
-  <div class="section">
-    <h2>Function: renderSprite</h2>
-    <p><strong>Description:</strong> Renders a sprite on the screen using JSON frame data.</p>
-    <pre><code>void renderSprite(Sprite sprite, int x, int y);
-
-Parameters:
-- sprite: The sprite object to render.
-- x: The x-coordinate on the screen.
-- y: The y-coordinate on the screen.</code></pre>
-  </div>
-
-  <div class="section">
-    <h2>Function: playSound</h2>
-    <p><strong>Description:</strong> Plays a sound effect using SDL Mixer.</p>
-    <pre><code>void playSound(string soundFile);
-
-Parameters:
-- soundFile: The path to the sound file to play.</code></pre>
-  </div>
-
-  <div class="section">
-    <h2>Function: updateGameObject</h2>
-    <p><strong>Description:</strong> Updates the state of a game object based on its components.</p>
-    <pre><code>void updateGameObject(GameObject obj);
-
-Parameters:
-- obj: The game object to update.</code></pre>
-  </div>
-
-  <div class="section">
-    <h2>Function: handleInput</h2>
-    <p><strong>Description:</strong> Processes user input and updates game state accordingly.</p>
-    <pre><code>void handleInput(InputEvent event);
-
-Parameters:
-- event: The input event to process.</code></pre>
-  </div>
-
-  <div class="section">
-    <h2>Function: [Function Name]</h2>
-    <p><strong>Description:</strong> [Brief description of the function]</p>
-    <pre><code>[Function Signature]
-
-Parameters:
-- [Parameter Name]: [Description of the parameter].
-- [Parameter Name]: [Description of the parameter].</code></pre>
-  </div>
-
-  <div class="section">
-    <h2>Function: [Function Name]</h2>
-    <p><strong>Description:</strong> [Brief description of the function]</p>
-    <pre><code>[Function Signature]
-
-Parameters:
-- [Parameter Name]: [Description of the parameter].
-- [Parameter Name]: [Description of the parameter].</code></pre>
-  </div>
-
+  <header>
+    <h1>Game Engine API Documentation</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#summary">Summary</a></li>
+      <li><a href="#conventions">Conventions</a></li>
+      <li><a href="#typedefs-constants">Typedefs &amp; Constants</a></li>
+      <li><a href="#enumerations">Enumerations</a></li>
+      <li><a href="#basic-functions">Basic Functions</a></li>
+      <li><a href="#general-resource-management">General Resource Management</a></li>
+      <!-- Add more links as needed -->
+    </ul>
+  </nav>
+  <main>
+    <section id="summary">
+      <h2>Summary</h2>
+      <p>Placeholder for summary of the Horde3D-like API.</p>
+    </section>
+    <section id="conventions">
+      <h2>Conventions</h2>
+      <p>Placeholder for API conventions (coordinate system, rotation order, matrix layout, etc.).</p>
+    </section>
+    <section id="typedefs-constants">
+      <h2>Typedefs &amp; Constants</h2>
+      <p>Placeholder for typedefs (e.g., H3DRes, H3DNode) and predefined constants (e.g., H3DRootNode).</p>
+    </section>
+    <section id="enumerations">
+      <h2>Enumerations</h2>
+      <ul>
+        <li><a href="#H3DRenderDevice">H3DRenderDevice</a></li>
+        <li><a href="#H3DOptions">H3DOptions</a></li>
+        <li><a href="#H3DStats">H3DStats</a></li>
+        <!-- More enumeration links -->
+      </ul>
+      <div id="H3DRenderDevice">
+        <h3>H3DRenderDevice</h3>
+        <p>Placeholder for renderer backend options.</p>
+      </div>
+      <div id="H3DOptions">
+        <h3>H3DOptions</h3>
+        <p>Placeholder for engine option parameters.</p>
+      </div>
+      <!-- More enumeration sections -->
+    </section>
+    <section id="basic-functions">
+      <h2>Basic Functions</h2>
+      <ul>
+        <li><a href="#h3dGetVersionString">h3dGetVersionString</a></li>
+        <li><a href="#h3dCheckExtension">h3dCheckExtension</a></li>
+        <li><a href="#h3dInit">h3dInit</a></li>
+        <!-- More function links -->
+      </ul>
+      <div id="h3dGetVersionString">
+        <h3>h3dGetVersionString</h3>
+        <p>Placeholder for function details.</p>
+      </div>
+      <div id="h3dCheckExtension">
+        <h3>h3dCheckExtension</h3>
+        <p>Placeholder for function details.</p>
+      </div>
+      <!-- More function sections -->
+    </section>
+    <section id="general-resource-management">
+      <h2>General Resource Management</h2>
+      <p>Placeholder for resource management functions and descriptions.</p>
+    </section>
+    <!-- Add additional sections for specific resource management, scene graph, etc. -->
+  </main>
+  <footer>
+    <p>© 2025 Game Engine Project</p>
+  </footer>
 </body>
 </html>
