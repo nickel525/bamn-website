@@ -4,12 +4,18 @@
   <meta charset="UTF-8">
   <title>Game Engine API Documentation</title>
   <style>
-    /* Basic styling */
-    body { font-family: sans-serif; max-width: 800px; margin: auto; padding: 1em; }
-    nav ul { list-style: none; padding: 0; }
-    nav li { margin: 0.5em 0; }
+    body { font-family: sans-serif; max-width: 900px; margin: auto; padding: 1em; }
+    /* Navigation styling */
+    nav { margin-bottom: 2em; }
+    nav .nav-group { border: 1px solid #ddd; padding: 0.5em; margin-bottom: 1em; }
+    nav .nav-group h3 { margin: 0.5em 0; font-size: 1em; color: #333; border-bottom: 1px solid #ccc; padding-bottom: 0.2em; }
+    nav .nav-group ul { list-style: none; margin: 0; padding: 0; }
+    nav .nav-group ul li { margin: 0.2em 0; }
+    nav .nav-group a { text-decoration: none; font-size: 0.9em; color: #007acc; }
+    nav .nav-group a:hover { text-decoration: underline; }
     section { margin-top: 2em; }
-    a { text-decoration: none; color: #007acc; }
+    section h2 { border-bottom: 2px solid #ddd; padding-bottom: 0.3em; }
+    section h3 { margin-top: 1em; }
   </style>
 </head>
 <body>
@@ -17,71 +23,89 @@
     <h1>Game Engine API Documentation</h1>
   </header>
   <nav>
-    <ul>
-      <li><a href="#summary">Summary</a></li>
-      <li><a href="#conventions">Conventions</a></li>
-      <li><a href="#typedefs-constants">Typedefs &amp; Constants</a></li>
-      <li><a href="#enumerations">Enumerations</a></li>
-      <li><a href="#basic-functions">Basic Functions</a></li>
-      <li><a href="#general-resource-management">General Resource Management</a></li>
-      <!-- Add more links as needed -->
-    </ul>
+    <div class="nav-group">
+      <h3>Overview</h3>
+      <ul>
+        <li><a href="#summary">Summary</a></li>
+        <li><a href="#conventions">Conventions</a></li>
+        <li><a href="#typedefs-constants">Typedefs &amp; Constants</a></li>
+      </ul>
+    </div>
+    <div class="nav-group">
+      <h3>Types &amp; Enumerations</h3>
+      <ul>
+        <li><a href="#enumerations">All Enums</a></li>
+        <li><a href="#H3DRenderDevice">H3DRenderDevice</a></li>
+        <li><a href="#H3DOptions">H3DOptions</a></li>
+        <!-- Add more enum links -->
+      </ul>
+    </div>
+    <div class="nav-group">
+      <h3>Function Categories</h3>
+      <ul>
+        <li><a href="#basic-functions">Basic Functions</a></li>
+        <li><a href="#general-resource-management">General Resource Management</a></li>
+        <li><a href="#scene-graph">Scene Graph Functions</a></li>
+      </ul>
+    </div>
   </nav>
+
   <main>
     <section id="summary">
       <h2>Summary</h2>
       <p>Placeholder for summary of the Horde3D-like API.</p>
     </section>
+
     <section id="conventions">
       <h2>Conventions</h2>
       <p>Placeholder for API conventions (coordinate system, rotation order, matrix layout, etc.).</p>
     </section>
+
     <section id="typedefs-constants">
       <h2>Typedefs &amp; Constants</h2>
-      <p>Placeholder for typedefs (e.g., H3DRes, H3DNode) and predefined constants (e.g., H3DRootNode).</p>
+      <h3>Typedefs</h3>
+      <ul>
+        <li>H3DRes: handle to resource (int32)</li>
+        <li>H3DNode: handle to scene node (int32)</li>
+      </ul>
+      <h3>Predefined Constants</h3>
+      <ul>
+        <li>H3DRootNode: Scene root node handle</li>
+      </ul>
     </section>
+
     <section id="enumerations">
       <h2>Enumerations</h2>
-      <ul>
-        <li><a href="#H3DRenderDevice">H3DRenderDevice</a></li>
-        <li><a href="#H3DOptions">H3DOptions</a></li>
-        <li><a href="#H3DStats">H3DStats</a></li>
-        <!-- More enumeration links -->
-      </ul>
-      <div id="H3DRenderDevice">
-        <h3>H3DRenderDevice</h3>
-        <p>Placeholder for renderer backend options.</p>
-      </div>
-      <div id="H3DOptions">
-        <h3>H3DOptions</h3>
-        <p>Placeholder for engine option parameters.</p>
-      </div>
-      <!-- More enumeration sections -->
+      <p>Placeholder for all enumeration definitions.</p>
     </section>
+
     <section id="basic-functions">
       <h2>Basic Functions</h2>
-      <ul>
-        <li><a href="#h3dGetVersionString">h3dGetVersionString</a></li>
-        <li><a href="#h3dCheckExtension">h3dCheckExtension</a></li>
-        <li><a href="#h3dInit">h3dInit</a></li>
-        <!-- More function links -->
-      </ul>
       <div id="h3dGetVersionString">
-        <h3>h3dGetVersionString</h3>
+        <h3>h3dGetVersionString()</h3>
         <p>Placeholder for function details.</p>
       </div>
       <div id="h3dCheckExtension">
-        <h3>h3dCheckExtension</h3>
+        <h3>h3dCheckExtension()</h3>
         <p>Placeholder for function details.</p>
       </div>
-      <!-- More function sections -->
+      <!-- More basic function placeholders -->
     </section>
+
     <section id="general-resource-management">
-      <h2>General Resource Management</h2>
+      <h2>General Resource Management Functions</h2>
       <p>Placeholder for resource management functions and descriptions.</p>
     </section>
-    <!-- Add additional sections for specific resource management, scene graph, etc. -->
+
+    <section id="scene-graph">
+      <h2>Scene Graph Functions</h2>
+      <p>Placeholder for scene graph manipulation functions.</p>
+    </section>
+
+    <!-- Additional sections for specific subsystems -->
+
   </main>
+
   <footer>
     <p>© 2025 Game Engine Project</p>
   </footer>
